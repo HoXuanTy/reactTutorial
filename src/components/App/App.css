@@ -36,3 +36,72 @@
     transform: rotate(360deg);
   }
 }
+
+/* CSS bai tap form */
+.form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form input[type="number"],
+.form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.form input[type="number"]:focus,
+.form input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form button[type="submit"]:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.form input:invalid {
+  border-color: #dc3545;
+}
+
+.form input:invalid:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.form input:valid {
+  border-color: #28a745;
+}
+
+.form input:valid:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.text-center {
+  text-align: center;
+}

@@ -60,5 +60,5 @@
 				return categories;
 	}
 	
-	}
+}
 	export default data;

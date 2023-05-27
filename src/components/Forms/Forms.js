@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class Forms extends Component {
     constructor(props) {
@@ -14,19 +14,30 @@ export default class Forms extends Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleChange = (event) => {
+    handleChange = async (event) => {
         let key = event.target.name;
         let val = parseFloat(event.target.value);
 
-        this.setState({ [key]: val }, () => {
-            this.setState({
-                avg: parseFloat(
-                    (parseFloat(this.state.hk1) + parseFloat(this.state.hk2)) / 2
-                ),
-            });
-            this.setResult();
-            this.setXL();
-        });
+
+        await this.setState({ [key]: val });
+        this.updateAverage();
+        this.setResult();
+        this.setXL();
+        // await this.setState({ [key]: val }, () => {
+        // await   this.setState({
+        //         avg: parseFloat(
+        //             (parseFloat(this.state.hk1) + parseFloat(this.state.hk2)) / 2
+        //         ),
+        //     });
+        //      this.setResult();
+        //      this.setXL();
+        // });
+    };
+
+
+    updateAverage = async () => {
+        const avg = parseFloat((parseFloat(this.state.hk1) + parseFloat(this.state.hk2)) / 2);
+        await this.setState({ avg });
     };
 
     handleSubmit = (event) => {
@@ -34,7 +45,7 @@ export default class Forms extends Component {
         alert("Ban la hoc sinh : " + this.state.xl);
     };
 
-    setResult = () => {
+    setResult = async () => {
         if (this.state.avg > 4.5) {
             this.setState({ result: "Được lên lớp" });
         } else {
@@ -42,16 +53,16 @@ export default class Forms extends Component {
         }
     };
 
-    setXL = () => {
+    setXL = async () => {
         if (this.state.avg < 4.5) {
             this.setState({ xl: "Yếu" });
-        } else if (this.state.avg < 6.5) {
+        } else if (this.state.avg >= 5 && this.state.avg < 6){
             this.setState({ xl: "Trung Bình" });
-        } else if (this.state.avg < 8) {
+        } else if (this.state.avg >= 6.5 && this.state.avg < 8) {
             this.setState({ xl: "Khá" });
-        } else if (this.state.avg < 9) {
+        } else if (this.state.avg >= 8 && this.state.avg < 9) {
             this.setState({ xl: "Giỏi" });
-        } else {
+        } else if (this.state.avg >= 9 && this.state.avg < 10){
             this.setState({ xl: "Xuất sắc" });
         }
     };

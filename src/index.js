@@ -5,6 +5,8 @@ import './index.css';
 // import App from './components/App/App';
 import Apps from './components/Router/App';
 
+import Add from './components/Add';
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -5,6 +5,7 @@ import About from './About';
 import Contact from './Contact';
 import Add from '../Add';
 import ShowProduct from './ShowProduct';
+import Edit from '../Edit';
 
 function Apps() {
     return (
@@ -30,7 +31,7 @@ function Apps() {
                 <Route path="/showproduct" component={ShowProduct} />
                 <Route path="/contact" component={Contact} />
                 <Route path="/add" component={Add} />
-                <Route path="/Edit" component={Add} />
+                <Route path="/Edit/:id" component={Edit} />
             </div>
         </Router>
     );

@@ -1,19 +1,6 @@
 {
   "products": [
     {
-      "name": "Doughnuts11",
-      "price": "15",
-      "image": "/images/1434429117-banh-su-kem-chien-20.jpg",
-      "color": "Hồng bánh kem",
-      "name_category": "sản phẩm hot",
-      "material": "Bánh và trứng",
-      "expiry_date": "3 ngày",
-      "origin": "Đà Nẵng",
-      "description": "Dành cho những người đói bụng",
-      "tinhtranghang": true,
-      "id": "3"
-    },
-    {
       "name": "Bánh Tiramisu Italia",
       "price": "36",
       "image": "/images/banhbonglantrungmuoi.jpg",

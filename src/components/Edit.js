@@ -3,7 +3,7 @@ import axios from 'axios';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-class Add extends Component {
+class Edit extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -228,7 +228,7 @@ class Add extends Component {
   }
 }
 
-export default Add;
+export default Edit;
 
 
 

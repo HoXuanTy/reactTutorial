@@ -331,3 +331,11 @@ li a {
 .btn_add a:hover {
   text-decoration: underline;
 }
+
+
+
+.table-data button{
+  background-color: rgb(255, 213, 1);
+  border: none;
+  border-radius: 3px;
+}

@@ -105,7 +105,7 @@ class Add extends Component {
         toast.success("Cập nhật sản phẩm thành công", {});
         history.goBack();
       });
-    } else  {
+    } else {
       if (name === '' && price === '' && image === '' && material === '' && expiry_date === '') {
         toast.warn("Vui lòng nhập đủ nội dung", {
         });

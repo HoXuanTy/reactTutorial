@@ -4,6 +4,7 @@ import Home from './Home';
 import About from './About';
 import Contact from './Contact';
 import Add from '../Add';
+import ShowProduct from './ShowProduct';
 
 function Apps() {
     return (
@@ -11,26 +12,25 @@ function Apps() {
             <div>
                 <h1>Welcome to my react</h1>
                 <nav>
-                    <ul>
-                        <li>
-                            <Link to={"/"}>Home</Link>
-                        </li>
-                        {/* <li>
-                            <Link to={"/about"}>About</Link>
-                        </li>
-                        <li>
-                            <Link to={"/contact"}>Contact</Link>
-                        </li> */}
-                        <li>
-                            <Link to={"/add"}>Add</Link>
-                        </li>
-                    </ul>
+                    <li className="nav-item">
+                        <Link to={"/"}>Home</Link>
+                    </li>
+                    {/* <li className="nav-item">
+                        <Link to={"/showproduct"}>Show product</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to={"/contact"}>Contact</Link>
+                    </li> */}
+                    <li className="nav-item btn_add">
+                        <Link to={"/add"}>Add</Link>
+                    </li>
                 </nav>
-                <hr/>
+                <hr />
                 <Route exact path="/" component={Home} />
-                <Route path="/about" component={About} />
+                <Route path="/showproduct" component={ShowProduct} />
                 <Route path="/contact" component={Contact} />
                 <Route path="/add" component={Add} />
+                <Route path="/Edit" component={Add} />
             </div>
         </Router>
     );

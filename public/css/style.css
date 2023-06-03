@@ -290,3 +290,44 @@ select.form-control {
 .table-data .action:hover {
   color: darkblue;
 }
+
+/*----------*/
+nav {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px;
+  
+}
+
+
+
+.btn_add {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.btn_add a {
+  color: #fff;
+}
+
+.btn_add a:hover {
+  text-decoration: underline;
+}

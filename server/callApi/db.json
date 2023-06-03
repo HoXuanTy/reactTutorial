@@ -181,19 +181,6 @@
       "description": "Ăn  càng nhiều càng tốt",
       "tinhtranghang": true,
       "id": "GyV1IQz"
-    },
-    {
-      "name": "Bánh nhật Bản33333333333333333",
-      "price": "200000",
-      "image": "/images/210215-banh-sinh-nhat-rau-cau-body- (6).jpg",
-      "color": "Xanh",
-      "name_category": "",
-      "material": "Bột ngũ cốc",
-      "expiry_date": "2021-05-13",
-      "origin": "Việt Nam",
-      "description": "Ăn  càng nhiều càng tốt",
-      "tinhtranghang": false,
-      "id": "HaJqmMK"
     }
   ],
   "categories": [

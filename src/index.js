@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './components/Middterm/lazada.css';
 
 // import App from './components/App/App';
 import Apps from './components/Router/App';

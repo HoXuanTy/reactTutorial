@@ -96,6 +96,8 @@ class ShowProduct extends Component {
         this.setState({ fileUpload: file[0] });
     };
 
+
+    
     async submitEditProduct(e) {
         e.preventDefault();
         const id = $("#editID").val();

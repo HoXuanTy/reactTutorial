@@ -6,22 +6,24 @@ import Contact from './Contact';
 import Add from '../Add';
 import ShowProduct from './ShowProduct';
 import Edit from '../Edit';
+import Lazada from '../Middterm/Lazada';
+import AddLazada from '../Middterm/AddLazada';
 
 function Apps() {
     return (
         <Router>
             <div>
-                <h1>Welcome to my react</h1>
+                <h1>Welcome to my react Ho Xuan Ty dep trai hon thay dinh</h1>
                 <nav>
                     <li className="nav-item">
                         <Link to={"/"}>Home</Link>
                     </li>
                     {/* <li className="nav-item">
                         <Link to={"/showproduct"}>Show product</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to={"/contact"}>Contact</Link>
                     </li> */}
+                    <li className="nav-item">
+                        <Link to={"/lazada"}>Lazada</Link>
+                    </li>
                     <li className="nav-item btn_add">
                         <Link to={"/add"}>Add</Link>
                     </li>
@@ -29,8 +31,8 @@ function Apps() {
                 <hr />
                 <Route exact path="/" component={Home} />
                 <Route path="/showproduct" component={ShowProduct} />
-                <Route path="/contact" component={Contact} />
-                <Route path="/add" component={Add} />
+                <Route path="/lazada" component={Lazada} />
+                <Route path="/add" component={AddLazada} />
                 <Route path="/Edit/:id" component={Edit} />
             </div>
         </Router>

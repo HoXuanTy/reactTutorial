@@ -102,7 +102,7 @@ class Edit extends Component {
           tinhtranghang: tinhtranghang,
         }
       }).then(res => {
-        toast.success("Cập nhật sản phẩm thành công", {});
+        alert("Cập nhật sản phẩm thành công", {});
         history.goBack();
       });
     } else {

@@ -102,7 +102,7 @@ class Add extends Component {
           tinhtranghang: tinhtranghang,
         }
       }).then(res => {
-        toast.success("Cập nhật sản phẩm thành công", {});
+        alert("Cập nhật sản phẩm thành công", {});
         history.goBack();
       });
     } else {
@@ -127,7 +127,6 @@ class Add extends Component {
           }
         }).then(res => {
           toast.success("Thêm sản phẩm thành công", {});
-          history.goBack();
         });
       }
     }
